@@ -1,6 +1,33 @@
 # Repositorio
 Un **repositorio de Git** es una carpeta dentro de la cual hemos inicializado un repositorio y, por tanto, tiene una carpeta llamada `.git`. Dentro de esa carpet `.git` el programa Git guarda información de todo lo relacionado con el control de versiones.
 
+# Antes de empezar con Git
+Para poder usar Git lo tendrás que instalar en tu equipo (se trata de un programa) y ejecutar, desde la terminal, los siguientes comandos para configurar Git y que puedas hacer *commits*.
+
+Para configurar tu nombre (cambia mi nombre por el tuyo):
+
+```bash
+$ git config --global user.name "Román Martínez"
+```
+
+Para configurar tu e-mail (cambia el mío por el tuyo):
+
+```bash
+$ git config --global user.email "rgmf@riseup.net"
+```
+
+Para configurar la rama por defecto (no sabemos qué son las ramas todavía, pero ponle el mismo nombre, es decir, "main"):
+
+```bash
+$ git config --global init.defaultBranch main
+```
+
+Ahora, por último, necesitas configurar el editor de textos que Git usará cuando lo necesites (lo entenderás más adelante). Yo voy a poner aquí "emacs" que es mi editor de textos favoritos, el que yo uso, pero seguramente tú no lo tendrás instalado. Por tanto, busca qué editor de textos tienes instalado, cómo se llama y cambia ese valor de "emacs" por el tuyo.
+
+```bash
+$ git config --global core.editor emacs
+```
+
 # Inicializar un repositorio de Git
 Para inicializar un repositorio de Git, muévete a la carpeta de trabajo, el proyecto, y ejecuta el siguiente comando: `git init`.
 
