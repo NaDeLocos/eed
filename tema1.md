@@ -65,3 +65,49 @@ Para ver el historial de los cambios o *commits* que has hecho usa el comando `g
 - `git log -p` para ver los detalles de los cambios en los ficheros.
 
 Otra opción relacionada es la del comando `git shortlog` que muestra la información formateada para poder ser usada en el momento en que quieras crear una nueva versión del software.
+
+# Ver las diferencias entre commits: diff
+En Git tenemos el comando `git diff` para ver las diferencias, los cambios, que hay entre *commits* o versiones.
+
+Existen varias posibilidades y opciones. Te resumo algunas:
+
+- `git diff` para ver los cambios antes de realizar el *commit* (cambios actuales).
+- `git diff <hash commit a> <hash commit b>` para ver los cambios entre los *commits* indicados (para especificar estos commits se tienen que usar los códigos hash que verás en el `git log`).
+- `git diff --name-only <hash commit a> <hash commit b>` para ver solo los nombres de los ficheros que han sufrido cambios entre los dos commits indicados.
+
+# Ignorar ficheros: .gitignore
+Podemos indicar a Git qué ficheros queremos que ignore y, por tanto, que no haga un seguimiento de ellos.
+
+Se utiliza un fichero llamado `.gitignore` que se crea en la raíz del proyecto para indicar en él, a través de reglas, qué ficheros queremos ignorar. ¿Por qué? Entre otras cosas:
+
+- Porque contienen información sensible
+- Porque son ficheros temporales
+- Porque no son relevantes para el proyecto
+
+En este fichero indicamos, por cada línea, qué fichero o ficheros ignorar. Algunos ejemplos:
+
+- `message.log` ignorará el fichero llamado `message.log` que está en la raíz del proyecto.
+- `logs/message.log` ignorará el fichero llamado `message.log` que está dentro de la carpeta `logs`.
+- `**/message.log` ignorará los ficheros que se llamen `message.log`, estén donde estén.
+- `logs/` ignorará todos los ficheros que haya en la carpeta `logs`.
+- `*.log` ignorará todos los ficheros que acaben con la extensión `.log`.
+
+# Ramas (branches)
+Recuerda configurar tu rama principal con el nombre **main** que es el nombre que se usa como convención hoy en día para la rama principal de trabajo:
+
+```bash
+$ git config --global init.defaultBranch main
+```
+
+Recordada esta configuración, ya podemos hablar de ramas: las ramas son diferentes líneas de desarrollo en Git. Nos permite trabajar de forma independiente y sin colisionar en proyectos colaborativos.
+
+También es útil usar ramas aunque trabajemos en un proyecto solos/as porque esto nos permitirá trabajar en características nuevas y hacer pruebas sin estropear la línea principal de trabajo.
+
+Aquí te doy la lista de las opciones, lo que puedes hacer con las ramas y el comando `git branch`:
+
+- `git branch` para ver las ramas actuales.
+- `git branch <nombre de la rama>` para crear una nueva rama con el nombre indicado.
+- `git branch -d <nombre de la rama>` para borrar de forma **segura** un rama ya que no se hará si hay cambios por mezclar.
+- `git branch -D <nombre de la rama>` para borrar la rama, se encuentre como se encuentre (¡¡¡CUIDADO!!!).
+- `git branch -m <nuevo nombre de la rama>` para cambiar el nombre de la rama actual por el nuevo nombre indicado.
+- `git branch -a` para ver las ramas remotas (todavía no hemos entrado al trabajo remoto con Git pero podemos adelantar este comando, para que lo tengas presente).
