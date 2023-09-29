@@ -111,3 +111,71 @@ Aquí te doy la lista de las opciones, lo que puedes hacer con las ramas y el co
 - `git branch -D <nombre de la rama>` para borrar la rama, se encuentre como se encuentre (¡¡¡CUIDADO!!!).
 - `git branch -m <nuevo nombre de la rama>` para cambiar el nombre de la rama actual por el nuevo nombre indicado.
 - `git branch -a` para ver las ramas remotas (todavía no hemos entrado al trabajo remoto con Git pero podemos adelantar este comando, para que lo tengas presente).
+
+# HEAD y referencias relativas a commits
+El commit sobre el que estamos trabajando tiene un puntero llamado `HEAD`.
+
+Podemos usar el puntero o referencia `HEAD` de Git para identificar *commits*. En vez de usar el hash del *commit* podemos usar el `HEAD`:
+
+- `HEAD` apunta al último commit.
+- `HEAD^` apunta al penúltimo commit.
+- `HEAD^^` apunta a hace dos commits.
+- `HEAD^^^` apunta a hace tres commits... vas entendiendo, ¿verdad?
+
+Si quieres apuntar a muchos commits atrás o, si lo prefires, puedes usar esta otra alternativa:
+
+- `HEAD~1` apunta la penúltimo commit.
+- `HEAD~2` apunta a hace dos commits.
+- `HEAD~10` apunta a hace diez commits.
+
+Sabiendo esto, podemos comprar los últimos dos commits así:
+
+```bash
+$ git diff HEAD^ HEAD
+```
+
+O, podemos ver los cambios que se han producido en los últimos tres commits así:
+
+```bash
+$ git diff HEAD~3 HEAD
+```
+
+# Checkout: moverse a otra rama o commit
+La opción `checkout` de Git la podemos usar para movernos de rama o de commit.
+
+## Moverse a otro commit
+¿Para qué podemos querer hacer esto? Para ver el estado de los ficheros y del proyecto en un commit atrás en el tiempo. Para moverte:
+
+```bash
+$ git checkout <hash del commit al que te quieres mover>
+```
+
+En este punto, el puntero `HEAD` quedará *detacheado* (*detached HEAD state*) lo que significa que no estás en ninguna rama. Así que, cualquier cambio que hagas en esta situación quedará huérfano.
+
+Para volver al último commit, imaginanado que estás en la rama *main*, basta con hacer:
+
+```bash
+$ git checkout main
+```
+
+## Moverse a otra rama
+Te puedes mover de una rama a otra con el comando `git checkout` indicando el nombre de la nueva rama. Imagina que estás en la rama *main* y quieres moverte a la rama *ejemplo*:
+
+```bash
+$ git checkout ejemplo
+```
+
+Los cambios que no hayan sido *commiteados* se arrastran.
+
+Un opción muy útil es la de crear la rama y moverse a ella. Lo que haríamos en dos comandos:
+
+```bash
+$ git branch ejemplo
+$ git checkout ejemplo
+```
+
+Lo puedes hacer en uno, con la opción *-b* de *checkout*:
+
+```bash
+$ git checkout -b ejemplo
+```
