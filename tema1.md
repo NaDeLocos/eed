@@ -179,3 +179,31 @@ Lo puedes hacer en uno, con la opción *-b* de *checkout*:
 ```bash
 $ git checkout -b ejemplo
 ```
+
+# Mezclar ramas
+Puedes mezclar ramas haciendo un *merge* o un *rebase*. Te resumo en los siguientes apartados cómo hacerlo.
+
+## Merge
+Para mezclar un rama en otra tienes que situarte en el destino, en la rama donde se hará la mezcla. Por ejemplo, si quieres mezclar una rama llamada **rama1** en la rama principal **main** tienes que realizar estos pasos:
+
+1. Cambia a la rama **main** si no estás ya en ella: `git checkout main`.
+2. Ejecuta el comando siguiente para mezclar lo que hay en **rama1**: `git merge rama1`.
+
+Cuando mezclas con un *merge* Git puede hacer esta mezcla o fusión de dos maneras:
+
+- Mezcla por **avance rápido** o **fast-forward** si no ha habido cambios en la rama destino desde la bifurcación.
+- Mezcla por **tres vías** en la que Git creará un commit adicional para unir el camino de las dos ramas a fusionar.
+
+Además, cuando mezclas dos ramas se pueden producir colisiones o conflictos si en ambas ramas se ha modificado el mismo fichero en la misma línea. Veremos, más adelante, cómo se resuelven estos conflictos ya que, si esto sucede, tendrás que terminar la fusión a mano.
+
+## Rebase
+La idea es la misma que con el *merge*: vas a la rama donde quieres fusionar y fusionas la rama origen.
+
+La diferencia es que le *rebase* crea un histórico lineal, llevando los *commits* del origen al final de los *commits* del destino. Así pues, como contrapartida, pierdes la "historia real" de lo que sucedió y cómo sucedió.
+
+En los *rebase* también se pueden producir conflictos que habría que resolver a mano para terminar de fusionar las dos ramas.
+
+Para hacer el *rebase* de un rama **rama1** a **main** tienes que realizar estos pasos:
+
+1. Cambia a la rama **main** si no estás ya en ella: `git checkout main`.
+2. Ejecuta el comando siguiente para mezclar lo que hay en **rama1**: `git rebase rama1`.
