@@ -46,17 +46,18 @@ miprograma/
 ├── README.md
 ├── src
 │   ├── main
-│   │   ├── com
-│   │   │   └── proferoman
-│   │   │       └── miprograma
-│   │   │           ├── Main.java
-│   │   │           └── models
-│   │   │               ├── Car.java
-│   │   │               ├── Plane.java
-│   │   │               └── Train.java
-│   │   │           └── views
-│   │   │               ├── Desktop.java
-│   │   │               └── Mobile.java
+│   │   ├── java
+│   │   │   └──com
+│   │   │       └── proferoman
+│   │   │           └── miprograma
+│   │   │               ├── Main.java
+│   │   │               ├── models
+│   │   │               │   ├── Car.java
+│   │   │               │   ├── Plane.java
+│   │   │               │   └── Train.java
+│   │   │               └── views
+│   │   │                   ├── Desktop.java
+│   │   │                   └── Mobile.java
 │   │   └── resources
 │   │   │   └── logo.png
 │   └── test
@@ -71,17 +72,18 @@ miprograma/
 ├── README.md
 ├── src
 │   ├── main
-│   │   ├── com
-│   │   │   └── proferoman
-│   │   │       └── miprograma
-│   │   │           ├── Main.java
-│   │   │           └── models
-│   │   │               ├── Car.java
-│   │   │               ├── Plane.java
-│   │   │               └── Train.java
-│   │   │           └── views
-│   │   │               ├── Desktop.java
-│   │   │               └── Mobile.java
+│   │   ├── java
+│   │   │   └──com
+│   │   │       └── proferoman
+│   │   │           └── miprograma
+│   │   │               ├── Main.java
+│   │   │               ├── models
+│   │   │               │   ├── Car.java
+│   │   │               │   ├── Plane.java
+│   │   │               │   └── Train.java
+│   │   │               └── views
+│   │   │                   ├── Desktop.java
+│   │   │                   └── Mobile.java
 │   │   └── resources
 │   │   │   └── logo.png
 │   └── test
@@ -102,7 +104,12 @@ Ahora podemos llevar a cabo los dos pasos para compilar y ejecutar este proyecto
 1. Compilar todos los ficheros fuente en `target/`:
 
 ```shell
-javac -d target src/main/com/proferoman/miprograma/Main.java src/main/com/proferoman/miprograma/models/Car.java src/main/com/proferoman/miprograma/models/Plane.java src/main/com/proferoman/miprograma/models/Train.java src/main/com/proferoman/miprograma/views/Desktop.java src/main/com/proferoman/miprograma/views/Mobile.java
+javac -d target src/main/java/com/proferoman/miprograma/Main.java \
+src/main/java/com/proferoman/miprograma/models/Car.java \
+src/main/java/com/proferoman/miprograma/models/Plane.java \
+src/main/java/com/proferoman/miprograma/models/Train.java \
+src/main/java/com/proferoman/miprograma/views/Desktop.java \
+src/main/java/com/proferoman/miprograma/views/Mobile.java
 ```
 
 2. Ejecutar el programa que hay en `target/`. Fíjate como indicamos el paquete de la clase donde está el método estático `main`:
@@ -112,6 +119,6 @@ java -cp target com.proferoman.miprograma.Main
 ```
 
 ## Herramientas de construcción en Java
-Hay dos bastante populares en **Java** que son: [https://maven.apache.org/](Maven) y [https://gradle.org/](Gradle).
+Hay dos bastante populares en **Java** que son: [Maven](https://maven.apache.org/) y [Gradle](https://gradle.org/).
 
 Aquí vamos a trabajar con **Maven**.
