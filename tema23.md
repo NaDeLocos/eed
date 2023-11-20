@@ -231,7 +231,7 @@ Para empezar, en las dependencias indicamos:
   - **test**: se usan cuando lanzamos los tests.
   - **system**: parecido a *provided* pero hay que añadir directamente el *JAR* que lo contiene.
   
-Los artefactos o bibliotecas que usamos como dependencias se instalan de repositorios que tenemos que indicar, aunque por defecto se usa [https://mvnrepository.com](este repositorio).
+Los artefactos o bibliotecas que usamos como dependencias se instalan de repositorios que tenemos que indicar, aunque por defecto se usa [este repositorio](https://mvnrepository.com).
 
 Desde los repositorios podemos buscar bibliotecas o artefactos y copiar/pegar el fragmente de XML que hay que añadir en el apartado `dependency` del fichero `pom.xml`, como hemos visto en clase.
 
