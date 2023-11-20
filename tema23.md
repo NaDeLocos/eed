@@ -1,8 +1,8 @@
 # Maven
-Maven es una herramienta de software para la gestión y construcción de proyectos Java creada por Jason van Zyl, de Sonatype, en 2002. Tienes toda la información en su [https://maven.apache.org/](página web).
+Maven es una herramienta de software para la gestión y construcción de proyectos Java creada por Jason van Zyl, de Sonatype, en 2002. Tienes toda la información en su [página web](https://maven.apache.org/)
 
 # Instalación de Maven
-Instalar Maven es sencillo: descarga los binarios desde [https://maven.apache.org/download.cgi](la página web oficial), descomprímelo en el directorio seleccionado y añade el directorio `bin` que se encuentra en la carpeta descomprimida a la variable de entorno `PATH`, aunque existen otros métodos como instaladores o descargas de repositorio.
+Instalar Maven es sencillo: descarga los binarios desde [la página web oficial](https://maven.apache.org/download.cgi), descomprímelo en el directorio seleccionado y añade el directorio `bin` que se encuentra en la carpeta descomprimida a la variable de entorno `PATH`, aunque existen otros métodos como instaladores o descargas de repositorio.
 
 > Si usas una distribución de GNU/Linux usa el gestor de paquetes para instalar Maven.
 
@@ -236,7 +236,7 @@ Los artefactos o bibliotecas que usamos como dependencias se instalan de reposit
 Desde los repositorios podemos buscar bibliotecas o artefactos y copiar/pegar el fragmente de XML que hay que añadir en el apartado `dependency` del fichero `pom.xml`, como hemos visto en clase.
 
 ## Plugins
-**Maven** tiene gran cantidad de plugins que podemos ver [https://maven.apache.org/plugins/](en la página web oficial de Maven).
+**Maven** tiene gran cantidad de plugins que podemos ver [en la página web oficial de Maven](https://maven.apache.org/plugins/).
 
 Como ves, en el fichero `pom.xml` es donde se indican los plugins.
 
