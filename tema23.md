@@ -270,3 +270,31 @@ Si quieres ejecutar uno de esos objetivos lo tienes que hacer con el mismo coman
 ```shell
 $ mvn compiler:compile
 ```
+
+# Integración de Maven en VSCode
+Existen extensiones para poder trabajar con **Maven desde VSCode**, y también para el resto de editores de desarrollo e IDEs.
+
+Puedes instalar el que quieras, pero asegúrate que, al menos, dicha extensión:
+
+- Tenga soporte para generar proyectos desde **Maven Archetype** (para evitar que lo tengas que hacer desde la terminal, como hasta ahora).
+- Te facilite la edición del fichero POM.
+- Puedas lanzar y ejecutar, cómodamente, *goals* comunes.
+
+La extensión que yo he instalado para este tema se llama **[Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)** y que incluye, entre otras cosas, soporte para Maven.
+
+Si instalas esta extensión, cada vez que abras VS Code verás un nuevo botón desde el que podrás crear un proyecto de Java usando Maven (entre otras cosas):
+
+![Ventana de VSCode con botón para crear proyectos de Java](img/vscode_create_java_project.png)
+
+Por otro lado, cuando abras un proyecto de Maven, verás en el panal lateral, no solo la jerarquía del proyecto, sino un nuevo desplegable llamado **MAVEN** con todas las opciones que puedes usar en este constructor y gestor de proyectos:
+
+![Panel laterla de VSCode con Maven](img/vscode_maven_extension.png)
+
+Desde ahí puedes, entre otras cosas:
+
+- Crear un nuevo proyecto de Maven usando **Archetype**.
+- Puedes añadir dependencias.
+- Puedes gestionar los plugins.
+- Y, sobre todo, puedes ejecutar una fase del ciclo de vida: compilar, empaquetar, limpiar, instalar, etc.
+
+En definitiva, ya puedes hacer todo lo que permite Maven y el comando `mvn`.
