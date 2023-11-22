@@ -288,7 +288,7 @@ Si instalas esta extensión, cada vez que abras VS Code verás un nuevo botón d
 
 Por otro lado, cuando abras un proyecto de Maven, verás en el panal lateral, no solo la jerarquía del proyecto, sino un nuevo desplegable llamado **MAVEN** con todas las opciones que puedes usar en este constructor y gestor de proyectos:
 
-![Panel laterla de VSCode con Maven](img/vscode_maven_extension.png)
+![Panel laterla de VSCode con Maven](img/vscode_maven_extension.svg)
 
 Desde ahí puedes, entre otras cosas:
 
