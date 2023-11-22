@@ -284,7 +284,7 @@ La extensión que yo he instalado para este tema se llama **[Extension Pack for 
 
 Si instalas esta extensión, cada vez que abras VS Code verás un nuevo botón desde el que podrás crear un proyecto de Java usando Maven (entre otras cosas):
 
-![Ventana de VSCode con botón para crear proyectos de Java](img/vscode_create_java_project.png)
+![Ventana de VSCode con botón para crear proyectos de Java](img/vscode_create_java_project.svg)
 
 Por otro lado, cuando abras un proyecto de Maven, verás en el panal lateral, no solo la jerarquía del proyecto, sino un nuevo desplegable llamado **MAVEN** con todas las opciones que puedes usar en este constructor y gestor de proyectos:
 
