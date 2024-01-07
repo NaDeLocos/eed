@@ -19,11 +19,11 @@ En las pruebas **automáticas** se usa un **programa paralelo al que estás desa
 ## En función del grado de conocimiento del código
 En las pruebas de **caja negra** se realizan y planifican tests sin inspeccionar el código fuente a probar. Lo que vas a probar es una caja negra dentro de la cual no sabes que hay, así que te limitas a proporcionar una entrada, esperando una salida determinada.
 
-![Pruebas de caja negra](./caja_negra.png)
+![Pruebas de caja negra](./img/caja_negra.png)
 
 En las pruebas de **caja blanca** haces o planificas las pruebas en base al código fuente. Así pues, cuando usas el enfoque **caja blanca** puedes asegurarte que tus pruebas pasan por todas las partes del código fuente. Por ejemplo, si hay un `if-else` haces dos pruebas: una para pasar por el `if` y otra para pasar por el `else`.
 
-![Pruebas de caja negra](./caja_blanca.png)
+![Pruebas de caja negra](./img/caja_blanca.png)
 
 ## En función del ciclo de vida en que se prueba
 El desarrollo del software sigue un ciclo de vida que termina con la entrega del mismo al usuario o cliente final. En cada fase se planifican difentes tipos de pruebas. Desde las fases más tempranas hasta la última fase (entrega del software al usuario/cliente final) estas sería las pruebas que se realizan:
