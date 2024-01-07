@@ -25,10 +25,12 @@ La fase de pruebas añade valor al producto: todos los programas tienen errores 
 # Objetivo de las pruebas
 Te lo resumo en un fase: **ejecutar el programa con el fin de encontrar errores**.
 
-# Alcance de las prebas
+# Alcance de las pruebas
 Llegamos al punto en el que tengo que presentarte uno de los términos que más vas a escuchar a partir de ahora: la **cobertura**.
 
-**La cobertura de las pruebas** es una medición, más o menos aproximada, dado, normalmente, en tanto por ciento, con la que se trata de establecer **cuánto código cubren las pruebas planificadas**.
+**La cobertura de las pruebas** es una medición, más o menos aproximada, dado en tanto por ciento, con la que se trata de establecer **cuánto código cubren las pruebas planificadas**.
+
+![Fórmula para obtener la cobertura de pruebas](./img/formula_cobertura.png)
 
 Cuando se planifican las pruebas se busca que estas sean completas, la llamada **completitud**, que nos dará una idea del grado de fiabilidad de las pruebas. Debes tener claro que no se puede llegar al 100% del a completitud porque no es posible crear todas las posibles pruebas.
 

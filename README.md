@@ -10,4 +10,5 @@
    1. [Clasificación de las pruebas](tema31.md)
    2. [Técnicas o métodos](tema32.md)
    3. [TDD: Test-Driven Development](tema33.md)
-   4. [Planificar pruebas: casos de prueba](tema34.md)
+   4. [CI/CD](tema34.md)
+   4. [Planificar pruebas: casos de prueba](tema35.md)
