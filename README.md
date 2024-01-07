@@ -6,3 +6,6 @@
    2. [Construcción de proyectos en Java](tema22.md)
 	  1. [Maven](tema221.md)
    3. [Depuradores](tema23.md)
+3. [Planificación y realización de pruebas](tema3.md)
+   1. [Clasificación de las pruebas](tema31.md)
+   2. 
