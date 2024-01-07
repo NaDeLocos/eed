@@ -61,20 +61,20 @@ Por cada caso de prueba vamos a anotar:
 Vayamos a un ejemplo para entender qué esperamos en los plantes de prueba que vamos a planificar: imagina que tenemos una clase en Java para la gestión del *login* o acceso típico de un programa. En este programa buscamos que el usuario introduzca un nombre de usuario y una contraseña. Aquí tienes dos casos de prueba para probar esta clase.
 
 <table>
-	<tr colspan="2">
-		<th>Descripción</th>
+	<tr>
+		<th colspan="2">Descripción</th>
 	</tr>
-	<tr colspan="2">
-		<td>
+	<tr>
+		<td colspan="2">
 			Se quiere probar que la clase Login dejará entrar al usuario si dicho usuario y contraseña está en la base de datos registrado
 		</td>
 	</tr>
-	<tr colspan="2">
-		<th>Condiciones de ejecución</th>
+	<tr>
+		<th colspan="2">Condiciones de ejecución</th>
 	</tr>
-	<tr colspan="2">
-		<td>
-			En la base de datos se tiene un usaurio "roman" con contraseña "123456"
+	<tr>
+		<td colspan="2">
+			En la base de datos se tiene un usuario "roman" con contraseña "123456"
 		</td>
 	</tr>
 	<tr>
@@ -93,19 +93,19 @@ Vayamos a un ejemplo para entender qué esperamos en los plantes de prueba que v
 </table>
 
 <table>
-	<tr colspan="2">
-		<th>Descripción</th>
+	<tr>
+		<th colspan="2">Descripción</th>
 	</tr>
-	<tr colspan="2">
-		<td>
+	<tr>
+		<td colspan="2">
 			Se quiere probar que la clase Login impedirá entrar a un usuario/contraseña no válidos (no existente)
 		</td>
 	</tr>
-	<tr colspan="2">
-		<th>Condiciones de ejecución</th>
+	<tr>
+		<th colspan="2">Condiciones de ejecución</th>
 	</tr>
-	<tr colspan="2">
-		<td>
+	<tr>
+		<td colspan="2">
 			En la base de datos no se tiene un usaurio "gines" con contraseña "123456"
 		</td>
 	</tr>
