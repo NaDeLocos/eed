@@ -53,6 +53,8 @@ Así, tendrías que diseñar pruebas, con las entradas oportunas, para que, al m
 		<td>
 			 1
 		</td>
+	</tr>
+	<tr>
 		<td>
 			a = false<br>
 			b = true<br>
@@ -61,6 +63,8 @@ Así, tendrías que diseñar pruebas, con las entradas oportunas, para que, al m
 		<td>
 			 0
 		</td>
+	</tr>
+	<tr>
 		<td>
 			a = true<br>
 			b = false<br>
@@ -69,6 +73,8 @@ Así, tendrías que diseñar pruebas, con las entradas oportunas, para que, al m
 		<td>
 			 1
 		</td>
+	</tr>
+	<tr>
 		<td>
 			a = true<br>
 			b = false<br>
@@ -77,6 +83,8 @@ Así, tendrías que diseñar pruebas, con las entradas oportunas, para que, al m
 		<td>
 			 0
 		</td>
+	</tr>
+	<tr>
 		<td>
 			a = true<br>
 			b = true<br>
