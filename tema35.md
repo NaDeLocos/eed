@@ -1,4 +1,4 @@
-# Planificar pruebas: casos de prueba
+# Casos de prueba
 Un **caso de prueba** (en inglés **test case**) es la **descripción de una prueba** concreta, en la que se indican las entradas de la prueba, unas condiciones de ejecución y los resultados esperados.
 
 Puedes realizar varios casos de prueba para comprobar que un requisito es completamente satisfactorio.

@@ -11,4 +11,7 @@
    2. [Técnicas o métodos](tema32.md)
    3. [TDD: Test-Driven Development](tema33.md)
    4. [CI/CD](tema34.md)
-   4. [Planificar pruebas: casos de prueba](tema35.md)
+   5. [Casos de prueba](tema35.md)
+   6. Planificación de pruebas
+	  6.1 [Enfoque de caja blanca](tema361.md)
+   
