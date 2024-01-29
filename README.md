@@ -13,5 +13,6 @@
    4. [CI/CD](tema34.md)
    5. [Casos de prueba](tema35.md)
    6. Planificación de pruebas
-	  1 [Enfoque de caja blanca](tema361.md)
+	  1. [Enfoque de caja blanca](tema361.md)
+	  2. [Enfoque de caja negra](tema362.md)
    
