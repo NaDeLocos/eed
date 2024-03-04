@@ -23,7 +23,7 @@ Todo esto debe estar documentado. El objetivo del documento es señalar el enfoq
 
 Un posible esquema del documento del plan de pruebas podría ser el siguiente:
 
-- Identificador únicó del documento
+- Identificador único del documento
 - Introducción y resumen de elementos y características a probar
 - Elementos software a probar
 - Características a probar
@@ -38,7 +38,7 @@ Un posible esquema del documento del plan de pruebas podría ser el siguiente:
 - Necesidades de personal y formación
 - Esquema de tiempos
 - Riesgos asumidos por el plan y planes de contingencias
-- Aprobaciones y firmas con nombre y puesto desempeñado
+- Aprobaciones, firmas con nombre y puesto desempeñado
 
 Junto a este documento, se pueden encontrar estos otros documentos:
 
@@ -58,7 +58,7 @@ Por cada caso de prueba vamos a anotar:
 - **Entradas**: los datos que vamos a pasar o utilizar para la prueba
 - La **salida** que se espera
 
-Vayamos a un ejemplo para entender qué esperamos en los plantes de prueba que vamos a planificar: imagina que tenemos una clase en Java para la gestión del *login* o acceso típico de un programa. En este programa buscamos que el usuario introduzca un nombre de usuario y una contraseña. Aquí tienes dos casos de prueba para probar esta clase.
+Vayamos a un ejemplo para entender qué esperamos en los planes de prueba que vamos a planificar: imagina que tenemos una clase en Java para la gestión del *login* o acceso típico de un programa. En este programa buscamos que el usuario introduzca un nombre de usuario y una contraseña. Aquí tienes dos casos de prueba para probar esta clase.
 
 <table>
 	<tr>
@@ -106,7 +106,7 @@ Vayamos a un ejemplo para entender qué esperamos en los plantes de prueba que v
 	</tr>
 	<tr>
 		<td colspan="2">
-			En la base de datos no se tiene un usaurio "gines" con contraseña "123456"
+			En la base de datos no se tiene un usuario "gines" con contraseña "123456"
 		</td>
 	</tr>
 	<tr>

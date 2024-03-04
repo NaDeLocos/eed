@@ -5,9 +5,9 @@ Es por ello que aquí se puede hablar de **cobertura de especificación** ya que
 
 Es habitual encontrase con la posibilidad de que el conjunto de datos a pasar (o entradas) sea muy amplio, y se hace imposible probar con todas las posibilidades. Por eso, existe una técnica algebraica llamada **clases de equivalencia**.
 
-Así pues, nuestro problema aquí va a ser enocntrar dichas clases de equivalencia.
+Así pues, nuestro problema aquí va a ser encontrar dichas clases de equivalencia.
 
-Estas clases de equivalencia las tenemos que especificar para las entradas y para la salida.
+Estas clases de equivalencia las tenemos que especificar para las entradas y para la salidas.
 
 Para terminar con esta introducción, y profundizar en todos estos aspectos, se sabe, por experiencia, que **un buen número de errores aparecen en torno a los puntos de cambio de las clases de equivalencia**, valores denominados **frontera o límite**.
 
@@ -31,7 +31,7 @@ No hay reglas universales para identificar clases de equivalencia pero sí hay r
 # Valores límite o frontera
 Como ya te he dicho al principio, la experiencia muestra que un buen número de errores aparecen en torno a los puntos de cambio de clases de equivalencia: valores denominados límite o frontera.
 
-¿Cómo localizar estos valors límite o frontera?
+¿Cómo localizar estos valores límite o frontera?
 
 - Si la clase de equivalencia es un rango [A - B] hay que probar:
   - A - 1
@@ -59,7 +59,7 @@ Imagina el ejemplo en que se require un valor mayor o igual que 8:
 
 En este ejemplo puedes ver que se ha optado por usar la técnica de los 2 valores poniendo la frontera entre el número 7 y el 8. Por ese motivo, los valores límite son: el 7 y el 8.
 
-Si pusieras el límite justo en el 8, entonces los valores límites sería: 7, 8 y 9. Así, usarías la técnica de los 3 valores.
+Si pusieras el límite justo en el 8, entonces los valores límites serían: 7, 8 y 9. Así, usarías la técnica de los 3 valores.
 
 Otro ejemplo.
 
